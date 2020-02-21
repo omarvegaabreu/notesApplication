@@ -3,7 +3,7 @@
 const titleElement = document.querySelector("#note-title");
 const bodyElement = document.querySelector("#note-body");
 const removeButton = document.querySelector("#remove-note");
-const addNoteButton = document.querySelector("#addNote");
+// const addNoteButton = document.querySelector("#addNote");
 const dateElement = document.querySelector("#last-edited");
 const noteId = location.hash.substring(1);
 let notes = getSavedNotes();
@@ -40,9 +40,9 @@ removeButton.addEventListener("click", e => {
   location.assign("./index.html");
 });
 
-addNoteButton.addEventListener("click", e => {
-  location.assign("./index.html");
-});
+// addNoteButton.addEventListener("click", e => {
+//   location.assign("./index.html");
+// });
 
 //save note title and body to local storage
 window.addEventListener("storage", e => {
